@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://st4.depositphotos.com/2273093/29152/v/1600/depositphotos_291525552-stock-illustration-satellite-map-bishkek-formerly-pishpek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.EcoMen {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px green double;
+
+}
+
+.EcoMen, .city, .tree, .garbages, .recycling{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.91);
+    font-weight: bold;
+}
+
+
+.city, .tree, .garbages, .recycling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.91);
+    font-weight: bold;
+}
+
+.city img, .tree img, .garbages img, .recycling img{
+    width: 20px;
+    height: 20px;
+}
+.cleanAndBin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cleanup {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0 0 250px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: relative;
+}
+
+.bin {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bin img {
+    width: 200px;
+    height: 200px;
+}
+
+.windowBishkek, .windowTree, .windowGarbages, .windowRecycle{
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    width: 300px;
+    height: 270px;
+    margin-top: 60px;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: rgba(255, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.windowTree {
+    background-color: rgba(0, 255, 0, 0.6);
+    top: 10%;
+    left: 40%;
+    height: 100px;
+}
+.windowGarbages {
+    background-color: rgba(0, 255, 0, 0.6);
+    top: 10%;
+    left: 65%;
+    height: 100px;
+}
+.windowRecycle {
+    background-color: rgba(0, 255, 0, 0.6);
+    top: 10%;
+    left: 89%;
+    height: 100px;
+}
+
+
+.ball {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.ball img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.ball:nth-child(1) { top: 200px; left: 350px; }
+.ball:nth-child(2) { top: 300px; left: 100px; }
+.ball:nth-child(3) { top: 120px; left: 550px; }
+.ball:nth-child(4) { top: 400px; left: 580px; }
+.ball:nth-child(5) { top: 250px; left: 700px; }
+.ball:nth-child(6) { top: 444px; left: 200px; }
+.ball:nth-child(7) { top: 20px; left: 500px;}
+.ball:nth-child(8) { top: 500px; left: 370px;}
+.ball:nth-child(9) { top: 333px; left: 400px; opacity: 50%}
